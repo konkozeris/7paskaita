@@ -12,11 +12,13 @@
     <style>
         .container {
             width: 100%;
+            background-color: maroon;
+            align-content: center;
         }
         .left, .right {
             width: 50%;
-            float:left;
-            padding: 1px;
+            float: left;
+            align-content: center;
         }
         .right h1 {
             font-style: italic;
@@ -33,6 +35,7 @@
         .right p {
             font-family: 'Baloo Tammudu 2', cursive;
             text-align: justify;
+            line-height: 1;
         }
         .right pre {
             font-family:Verdana;
@@ -40,13 +43,26 @@
         .right h1 {
             margin: 0px;
             line-height: 1.5;
+            color: white;
+        }
+        .right, .left {
+            background-color:lightsalmon;
+        }
+        .left-container, .right-container {
+            padding: 50px;
+            background-color: darkolivegreen;
+            border: lightsalmon solid 2px;
+            max-width: 70%;
+            
         }
 
     </style>
 </head>
 <body>
     <div class='container'>
-        <div class='left'><h1>1TEKSTAS1</h1>
+        <div class='left'>
+            <div class='left-container'>
+            <h1>1TEKSTAS1</h1>
             <h2>2tekstas2</h2>
             <h3>3tekstas3</h3>
             <h4>4tekstas4</h4>
@@ -69,8 +85,10 @@
         <p>
             &lt;h1&gt;
         </p>
+            </div>
         </div>
         <div class='right'>
+            <div class='right-container'>
             <h1>1TEKSTAS1</h1>
             <h2>2tekstas2</h2>
             <h3>3tekstas3</h3>
@@ -94,6 +112,7 @@
         <p>
             &lt;h1&gt;
         </p>
+            </div>
         </div>
     </div>
     
